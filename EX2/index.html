@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index.css">
 
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <br />
-      <h1 style="text-align: center">Github Search Repository Name</h1>
-      <br><br>
-      <form id="myForm" autocomplete="off">
-        <div class="form-group">
-          <input
-            type="text"
-            id="search"
-            placeholder="search repository Name"
-            style="text-align: center"
-            required
-       
-          />
-        </div>
-        <div class="form-group">
-            <button class="btn btn-danger align-item:center">
-                Search Repository
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
 
-        </div>
-      </form>
-      <div id="result">
-        <!-- <div class="card">
-          <div class="image">
-           
-          </div>
-          <div class="info">
-              
-          </div>
-          <div class="bookmark">
-              
-          </div>
-          <div class="sendEmail">
-              
-          </div>
-        </div> -->
-     </div>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Github Search Repository Name</h1>
+ </header>
+  <section class="myForm">
+    <form autocomplete="off">
+      <div>
+        <input type="text" id="search" placeholder="search repository Name" style="text-align: center" required />
+      </div>
+      <div>
+        <button>
+          Search Repository
+        </button>
+
+      </div>
+    </form>
+  </section>
+  <section>
+    <div id="result">
+
     </div>
+  </section>
+  
+  <script src="index.js"></script>
+</body>
 
-    <script src="index.js"></script>
-  </body>
 </html>

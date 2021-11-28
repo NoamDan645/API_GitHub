@@ -1,6 +1,5 @@
 const form = document.getElementById("myForm");
-const buttonBookmarck = document.createElement("button");
-
+let finalHtml = "";
 // const BuildBookmarck = () => {
 
 // }
@@ -10,27 +9,21 @@ const buttonBookmarck = document.createElement("button");
 // const BuildEmail = ()=>{
 
 // }
-const buildElement = (data) =>{
+const buildElement = (data) => {
   // buildPhoto()
   // BuildBookmarck()
   // BuildEmail()
   console.log(data);
   data.items.map((item) => {
-    newDiv = document.getElementById("result").innerHTML = 
-    `<img class="img-thumbnail"  src="${item.owner.avatar_url}"/> 
+    finalHtml +=
+      `<img class="img-thumbnail"  src="${item.owner.avatar_url}"/> 
     ${item.full_name} 
-    
     `
-    newButton= document.getElementById("bookmark").innerHTML =
-    buttonBookmarck.innerHTML="click";
-    document.body.appendChild(btn);
-  
-
+    document.getElementById("result").innerHTML = finalHtml;
   });
 }
 
 const getRepo = async (e) => {
-  
   e.preventDefault();
   const search = document.getElementById("search").value;
   const nameSearch = search.split(" ").join("");

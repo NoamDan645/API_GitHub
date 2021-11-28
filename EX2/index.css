@@ -1,20 +1,79 @@
+
 body {
-    font: 300 14px/1.2 'Public Sans', sans-serif;
-   
-  }
-.myForm{
-    align-items: center;
-    background-color: rgb(172, 127, 255);
-  }
-.result {
-    /* display: flex;
-    justify-content: center;
-    width: 100px; */
+    /* font: 300 14px/1.2 'Public Sans', sans-serif; */
 }
 
-@media (min-width: 768px) {
-    #demo1 {
-        flex-direction: row;
-        align-items: baseline;
-    }
+header{
+  text-align: center;
+  background-color: antiquewhite;
+  font-size: large;
+  padding-top: 40px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
 }
+
+.myForm{
+  background-color: aquamarine;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+
+}
+ .section .inputSearch{
+  background-color: brown;
+  height: 100px;
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: crimson;
+  }
+  header{
+    inline-size: 24;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+    background-color: darkgoldenrod;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
